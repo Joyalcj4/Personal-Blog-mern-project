@@ -1,0 +1,61 @@
+.about-container{
+    max-width: 90vw;
+    min-height: 100vh;
+    margin: 60px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+h1{
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #333;
+}
+p{
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+.edit-button{
+    background-color: white;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  color: black;
+  border-radius: 4px;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 14px;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+.edit-button:hover {
+  background-color: black;
+  color: #fff;
+}
+.edit-button:focus {
+  outline: none;
+}
+.edit-button:active {
+  background-color: #ff4d4f;
+}
+.edit-button:disabled {
+  background-color: #ffccc7;
+  cursor: not-allowed;
+}
+.edit-button:disabled:hover {
+  background-color: #ffccc7;
+    color: #fff;    
+}
+.edit-button:disabled:active {
+  background-color: #ffccc7;
+    color: #fff;    
+}
+.edit-button:disabled:focus {
+  outline: none;
+}

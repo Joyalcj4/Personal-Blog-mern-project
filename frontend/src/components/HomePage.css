@@ -1,0 +1,147 @@
+.home-container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.home-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #333;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.blog-card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.blog-meta,
+.blog-stats {
+  font-size: 13px;
+  color: #777;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.blog-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  margin: 0;
+}
+
+.blog-subtitle {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.read-link {
+  margin-top: auto;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0070f3;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.read-link:hover {
+  color: #0051a3;
+}
+
+.dot {
+  font-weight: bold;
+}
+.create-blog-button {
+  margin-bottom: 20px;
+  display: inline-block;
+  padding: 16px 16px;
+  background-color: #fff;
+  color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.create-blog-button:hover {
+  background-color: black;
+  color: #fff;
+}
+.delete-button {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.delete-button:hover {
+  background-color: #ff7875;
+}
+.delete-button:focus {
+  outline: none;
+}
+.delete-button:active {
+  background-color: #ff4d4f;
+}
+.delete-button:disabled {
+  background-color: #ffccc7;
+  cursor: not-allowed;
+}
+.logout {
+  background-color: white;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  color: black;
+  border-radius: 4px;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 14px;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+.logout:hover {
+  background-color: black;
+  color: #fff;
+}
+.logout:focus {
+  outline: none;
+}
+.logout:active {
+  background-color: #ff4d4f;
+}
+.logout:disabled {
+  background-color: #ffccc7;
+  cursor: not-allowed;
+}

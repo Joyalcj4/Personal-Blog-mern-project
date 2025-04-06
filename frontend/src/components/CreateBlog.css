@@ -1,0 +1,44 @@
+/* frontend/src/pages/CreateBlog.css */
+
+.create-blog-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .create-blog-container h2 {
+    text-align: center;
+    color: #2d372e;
+    margin-bottom: 20px;
+  }
+  
+  .create-blog-form input,
+  .create-blog-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .create-blog-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2d372e;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .create-blog-form button:hover {
+    background-color: #3f4c41;
+  }
+  

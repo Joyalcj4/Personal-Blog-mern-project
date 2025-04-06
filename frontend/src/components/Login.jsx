@@ -13,7 +13,7 @@ const Login = () => {
     setError("");
 
     try {
-      const res = await axios.post("http://localhost:5500/api/auth/login", {
+      const res = await axios.post("https://personal-blog-mern-project.onrender.com/api/auth/login", {
         username,
         password,
       });

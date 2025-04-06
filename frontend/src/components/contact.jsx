@@ -14,7 +14,7 @@ const Contact = () => {
 
         const fetchContact = async () => {
             try {
-                const res = await axios.get("http://localhost:5500/api/contact");
+                const res = await axios.get("https://personal-blog-mern-project.onrender.com/api/contact");
                 setContact(res.data.contact); // assuming backend returns { contact: { content: "..." } }
             } catch (err) {
                 console.error("Failed to fetch contact", err);
@@ -28,7 +28,7 @@ const Contact = () => {
         const newContent = prompt("Enter new content for the Contact page:", contact.content);
         if (newContent) {
             axios.put(
-                "http://localhost:5500/api/contact",
+                "https://personal-blog-mern-project.onrender.com/api/contact",
                 { content: newContent },
                 {
                     headers: {

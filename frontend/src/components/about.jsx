@@ -19,7 +19,7 @@ const About = () => {
       // Fetch blogs
       const fetchAbout = async () => {
         try {
-          const res = await axios.get("http://localhost:5500/api/about");
+          const res = await axios.get("https://personal-blog-mern-project.onrender.com/api/about");
           setAbout(res.data.about);
         } catch (err) {
           console.error("Failed to fetch about", err);
@@ -32,7 +32,7 @@ const About = () => {
         const newContent = prompt("Enter new content for the About page:", about.content);
         if (newContent) {
             axios.put(
-                "http://localhost:5500/api/about",
+                "https://personal-blog-mern-project.onrender.com/api/about",
                 { content: newContent },
                 {
                   headers: {

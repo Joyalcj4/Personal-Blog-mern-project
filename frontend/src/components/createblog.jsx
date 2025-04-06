@@ -17,7 +17,7 @@ const CreateBlog = ({create}) => {
 
     try {
       await axios.post(
-        "http://localhost:5500/api/blogs",
+        "https://personal-blog-mern-project.onrender.com/api/blogs",
         { title, content },
         { headers: { Authorization: `Bearer ${token}` } }
       );

@@ -12,7 +12,11 @@ const app = express();
 const PORT = process.env.PORT || 5500;
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: 'https://personal-blog-mern-project.vercel.app', // change to actual Vercel URL after deploying frontend
+  credentials: true
+}));
+
 app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/blogs', blogRoutes);

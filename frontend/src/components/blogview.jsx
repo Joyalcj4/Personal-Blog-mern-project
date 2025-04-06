@@ -17,7 +17,7 @@ const Blogview = () => {
     useEffect(() => {
         const fetchBlog = async () => {
             try {
-                const res = await axios.get(`http://localhost:5500/api/blogs/${id}`);
+                const res = await axios.get(`https://personal-blog-mern-project.onrender.com/api/blogs/${id}`);
                 setBlog(res.data);
             } catch (err) {
                 console.error("Failed to fetch blog", err);
@@ -33,7 +33,7 @@ const Blogview = () => {
         const newContent = prompt("Enter new content for the Blog:", blog.content);
         if (newTitle && newContent) {
             axios.put(
-                `http://localhost:5500/api/blogs/${id}`,
+                `https://personal-blog-mern-project.onrender.com/api/blogs/${id}`,
                 { title: newTitle, content: newContent },
                 {
                     headers: {
